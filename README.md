@@ -64,7 +64,7 @@ Findings and Conclusions:
 </table>
 
 
-All 4 variables exhibit statistically significant distributional differences between the two groups, with the strongest effect being observed in baseline water stress. In particular, data centers demonstrate higher median, higher upper quartile, and high maximum for cumulative warming. Furthremore, data centers tend to exhibit a tighter distribution with reduced variability in YoY changes, while cities show a broader spread and a higher frequency of extreme fluctuations. 
+All 4 variables exhibit statistically significant distributional differences between the two groups, with the strongest effect being observed in baseline water stress. In particular, data centers demonstrate higher median, higher upper quartile, and high maximum for cumulative warming. Furthermore, data centers tend to exhibit a tighter distribution with reduced variability in YoY changes, while cities show a broader spread and a higher frequency of extreme fluctuations. 
 
 
 <table>
@@ -78,13 +78,13 @@ All 4 variables exhibit statistically significant distributional differences bet
   </tr>
 </table>
 
-In addition and as demonstrated in the above two figures, baseline water stress is higher for data centers locations than cities, while drough risk shows strong overlap with cities exhibiting larger variability.
+In addition and as demonstrated in the above two figures, baseline water stress is higher for data center locations than cities, while drought risk shows strong overlap with cities exhibiting larger variability.
 
-2- Thermal and hydrological risks are largly uncorrelated.
+2- Thermal and hydrological risks are largely uncorrelated.
 
 ![result](figures/correlation_heatmap.png)
 
-Correlation analysis shows near-zero relationships between temperatures variables and hydrological indicators.
+Correlation analysis shows near-zero relationships between temperature variables and hydrological indicators.
 
 3- Temperature variables dominate feature importance analysis predictions.
 
@@ -96,7 +96,7 @@ ML models identify temperature-based variables as the primary driver for classif
 
 ![result](figures/pca_clusters.png)
 
-HDBSCAN identfies multiple environmental risk clusters. These are: 
+HDBSCAN identifies multiple environmental risk clusters. These are: 
 
 * an extreme hydrological-risk cluster  
 * a large dominant cluster with moderate-risk conditions

@@ -7,7 +7,7 @@ https://arxiv.org/pdf/2603.20897
 The current project focuses on 187 global AI data centers and their corresponding 92 nearby or enclosed city centers. More specifically, data centers here refer to sites with large-scale computations or cloud operations. For each category, the following datasets are collected: 
 
 * Geographic coordinates: latitudes and longitudes for spatial alignment
-* Average yearly temperatures from 2006 untill mid 2026
+* Average yearly temperatures from 2006 until mid 2026
 * Static hydrological risk indicators (baseline water stress and drought risk)
 
 Data Sources
@@ -27,11 +27,11 @@ Data Sources
    Licensed under CC BY 4.0
    https://www.wri.org/aqueduct
 
-The above data collection was performed using several libraraies in Python, which are included under src. 
+The above data collection was performed using several libraraies in Python, which are included under src. These include geopy, geopandas, sklearn, hdbscan, seaborn, matplotlib, requests and pandas.
 
 Methods and techniques: 
 
-The first step includes constructing a spatial-temporal environmental datasets by merging the static hydrological risk indicators with the temperature time series using a coordinate-based spatial join. Accordingly, four variables are then defined. These are:
+The first step includes constructing spatial-temporal environmental datasets by merging the static hydrological risk indicators with the temperature time series using a coordinate-based spatial join. Accordingly, four variables are then defined. These are:
 
 * Year-over-year temperature change
 * Long-term cumulative temperature deviation
@@ -40,11 +40,11 @@ The first step includes constructing a spatial-temporal environmental datasets b
 
 For analysing these variables, a combination of the following statistical and machine learning methods was applied:
 
-* Non-parametric testing (Mann-Whitney U) to compare the distributions between data centers and city centers.
+* Non-parametric testing (Mann-Whitney U) to compare the distributions between the two groups.
 * Correlation analysis
 * PCA for dimensionality reduction
 * Random forest classification (GroupKFold validation)
-* HDBSCAN clustering to identify environmental risk clusters.
+* HDBSCAN clustering to identify environmental clusters.
 
 Findings and Conclusions: 
 
@@ -78,7 +78,7 @@ All 4 variables exhibit statistically significant distributional differences bet
   </tr>
 </table>
 
-In addition and as demonstrated in the above two figures, baseline water stress is higher for data centers locations than cities, while drough risk show strong overlap with cities exhibiting larger variablity.
+In addition and as demonstrated in the above two figures, baseline water stress is higher for data centers locations than cities, while drough risk shows strong overlap with cities exhibiting larger variability.
 
 2- Thermal and hydrological risks are largly uncorrelated.
 
@@ -96,15 +96,15 @@ ML models identify temperature-based variables as the primary driver for classif
 
 ![result](figures/pca_clusters.png)
 
-HDBSCAN identfies multiple environmental risk clusers. These are: 
+HDBSCAN identfies multiple environmental risk clusters. These are: 
 
-* an extreme hydrolofical-risk cluster  
-* a large dominate cluster with moderate-risk conditions
-* a large outlier cluster that contains mixed risk conditiosn
+* an extreme hydrological-risk cluster  
+* a large dominant cluster with moderate-risk conditions
+* a large outlier cluster that contains mixed risk conditions
 
 5- Random forest classification provided limited ability to separate classes. 
 
-With Accuracy = 87% and City F1 = 0.08, it is clear that class imbalance was observed with the data centers class domintating, which affected the classification performance on the other group.
+With Accuracy = 87% and City F1 = 0.08, it is clear that class imbalance was observed with the data centers class dominating, which affected the classification performance on the other group.
 
 
 Author 

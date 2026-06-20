@@ -53,15 +53,31 @@ Findings and Conclusions:
   <tr>
     <th align="center">Warming Rate</th>
     <th align="center">Temperature Cumulative Change</th>
+    <th align="center">Year-over-Year (YoY) Change</th>
   </tr>
   <tr>
-    <td><img src="figures/warming_rate_comparison.png" width="100%" alt="Caption 1" /></td>
-    <td><img src="figures/temp_cumulative_change_comparison.png" width="100%" alt="Caption 2" /></td>
+    <td><img src="figures/warming_rate_comparison.png" width="100%" alt="Warming Rate" /></td>
+    <td><img src="figures/temp_cumulative_change_comparison.png" width="100%" alt="Cumulative Change" /></td>
+    <td><img src="figures/temp_yoy_change_comparison.png" width="100%" alt="YoY Change" /></td>
   </tr>
 </table>
 
 
-All 4 variables exhibit statistically significant distributional differences between the two groups, with the strongest effect been observed in baseline water stress. In particular, data centers demonstrate higher median, higher upper quartile, and high maximum for cumulative warming.
+All 4 variables exhibit statistically significant distributional differences between the two groups, with the strongest effect being observed in baseline water stress. In particular, data centers demonstrate higher median, higher upper quartile, and high maximum for cumulative warming. Furthremore, data centers tend to exhibit a tighter distribution with reduced variability in YoY changes, while cities show a broader spread and a higher frequency of extreme fluctuations. 
+
+<!-- Replace the word 'result' in Finding 2 with this: -->
+<table>
+  <tr>
+    <th align="center">Baseline Water Stress (BWS)</th>
+    <th align="center">Drought Risk (DRR)</th>
+  </tr>
+  <tr>
+    <td><img src="figures/bws_raw_comparison.png" width="100%" alt="BWS Comparison" /></td>
+    <td><img src="figures/drr_raw_comparison.png" width="100%" alt="DRR Comparison" /></td>
+  </tr>
+</table>
+
+In addition and as demonstrated in the above two figures, baseline water stress is higher for data centers locations than cities, while drough risk show strong overlap with cities exhibiting larger variablity.
 
 2- Thermal and hydrological risks are largly uncorrelated.
 

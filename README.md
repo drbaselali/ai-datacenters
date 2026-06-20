@@ -49,7 +49,8 @@ For analysing these variables, a combination of the following statistical and ma
 Findings and Conclusions: 
 
 1- Significant statistical differences were observed between the two location types.
-
+| Figure 1 | Figure 2 |
+| :---: | :---: |
 | ![Caption 1](figures/warming_rate_comparison.png) | ![Caption 2](figures/temp_cumulative_change_comparison.png) |
 
 

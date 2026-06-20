@@ -50,8 +50,6 @@ Findings and Conclusions:
 
 1- Significant statistical differences were observed between the two location types.
 
-| First Figure | Second Figure |
-| :---: | :---: |
 | ![Caption 1](figures/warming_rate_comparison.png) | ![Caption 2](figures/temp_cumulative_change_comparison.png) |
 
 

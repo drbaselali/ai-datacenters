@@ -4,7 +4,7 @@ The respository is inspired by the data heat island effect, which was first intr
 
 https://arxiv.org/pdf/2603.20897
 
-The current project focuses on 187 global AI data centers and their corresponding 92 nearby or enclosed city centers. For each category, the following datasets are collected: 
+The current project focuses on 187 global AI data centers and their corresponding 92 nearby or enclosed city centers. More specifically, data centers here refer to sites with large-scale computations or cloud operations. For each category, the following datasets are collected: 
 
 * Geographic coordinates: latitudes and longitudes for spatial alignment
 * Average yearly temperatures from 2006 untill mid 2026
@@ -48,17 +48,17 @@ For analysing these variables, a combination of the following statistical and ma
 
 Findings and Conclusions: 
 
-1- Significant statistical differences were observed between the two location type (data center, city centers).
+1- Significant statistical differences were observed between the two location types.
 
-All 4 variables exhibit statistically significant distributional differences between data centers and city centers, with the strongest effect been observed in baseline water stress. In particular, data centers demonstrate higher median, higher upper quartile, and high maximum for cumulative warming.
+All 4 variables exhibit statistically significant distributional differences between the two groups, with the strongest effect been observed in baseline water stress. In particular, data centers demonstrate higher median, higher upper quartile, and high maximum for cumulative warming.
 
 2- Thermal and hydrological risks are largly uncorrelated.
 
 Correlation analysis shows near-zero relationships between temperatures variables and hydrological indicators.
 
-3- Temperature variables dominate feature importance.
+3- Temperature variables dominate feature importance analysis predictions.
 
-ML models identify temperature-based variables as the primary driver for classification, accounting for roughly two thirds of total feature importance. 
+ML models identify temperature-based variables as the primary driver for classification, accounting for roughly two thirds of total feature importance. Therefore, feature importance reflects model-specific predictive contribution.
 
 4- Distinct environmental risk groups are present based on HDBSCAN analysis
 
@@ -70,11 +70,8 @@ HDBSCAN identfies multiple environmental risk clusers. These are:
 
 5- Random forest classification provided limited ability to separate classes. 
 
-With Accuracy = 87% and City F1 = 0.08, it is clear that data centers class dominate, while city class is difficult to separate.
+With Accuracy = 87% and City F1 = 0.08, it is clear that class imbalance was observed with the data centers class domintating, which affected the classification performance on the other group.
 
-6- Top 20 unique highest risk location - year include the following starting with the highest risk: 
-
-Spain 2022 - United States 2014 - Italy 2011 - Belguim 2011 - France 2011 - United States 2020 - romania 2007 - China 2025 - United Arab Emirates 2021 - United Arab Emirates 2010.
 
 Author 
 

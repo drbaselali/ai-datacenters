@@ -50,17 +50,25 @@ Findings and Conclusions:
 
 1- Significant statistical differences were observed between the two location types.
 
+![result](figures/warming_rate_comparison.png)
+
 All 4 variables exhibit statistically significant distributional differences between the two groups, with the strongest effect been observed in baseline water stress. In particular, data centers demonstrate higher median, higher upper quartile, and high maximum for cumulative warming.
 
 2- Thermal and hydrological risks are largly uncorrelated.
+
+![result](figures/correlation_heatmap.png)
 
 Correlation analysis shows near-zero relationships between temperatures variables and hydrological indicators.
 
 3- Temperature variables dominate feature importance analysis predictions.
 
+![result](figures/rf_feature_importance.png)
+
 ML models identify temperature-based variables as the primary driver for classification, accounting for roughly two thirds of total feature importance. Therefore, feature importance reflects model-specific predictive contribution.
 
 4- Distinct environmental risk groups are present based on HDBSCAN analysis
+
+![result](figures/pca_clusters.png)
 
 HDBSCAN identfies multiple environmental risk clusers. These are: 
 

@@ -51,8 +51,8 @@ Findings and Conclusions:
 1- Significant statistical differences were observed between the two location types.
 <table>
   <tr>
-    <th align="center">Figure 1</th>
-    <th align="center">Figure 2</th>
+    <th align="center">Warming Rate</th>
+    <th align="center">Temperature Cumulative Change</th>
   </tr>
   <tr>
     <td><img src="figures/warming_rate_comparison.png" width="100%" alt="Caption 1" /></td>

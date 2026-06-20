@@ -49,6 +49,7 @@ For analysing these variables, a combination of the following statistical and ma
 Findings and Conclusions: 
 
 1- Significant statistical differences were observed between the two location types.
+
 <table>
   <tr>
     <th align="center">Warming Rate</th>
@@ -65,7 +66,7 @@ Findings and Conclusions:
 
 All 4 variables exhibit statistically significant distributional differences between the two groups, with the strongest effect being observed in baseline water stress. In particular, data centers demonstrate higher median, higher upper quartile, and high maximum for cumulative warming. Furthremore, data centers tend to exhibit a tighter distribution with reduced variability in YoY changes, while cities show a broader spread and a higher frequency of extreme fluctuations. 
 
-<!-- Replace the word 'result' in Finding 2 with this: -->
+
 <table>
   <tr>
     <th align="center">Baseline Water Stress (BWS)</th>

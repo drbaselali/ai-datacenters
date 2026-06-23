@@ -1,13 +1,13 @@
 # ai-datacenters
 
-The respository is inspired by the data heat island effect, which was first introduced in the following paper: 
+The repository is inspired by the data heat island effect, first introduced in the following paper: 
 
 https://arxiv.org/pdf/2603.20897
 
-The current project focuses on 187 global AI data centers and their corresponding 92 nearby or enclosed city centers. More specifically, data centers here refer to sites with large-scale computations or cloud operations. For each category, the following datasets are collected: 
+The current project focuses on 187 global AI data centers and their corresponding 92 nearby or enclosed city centers. More specifically, data centers refer to sites with large-scale computations or cloud operations. For each category, the following datasets are collected: 
 
 * Geographic coordinates: latitudes and longitudes for spatial alignment
-* Average yearly temperatures from 2006 until mid 2026
+* Average yearly temperatures from 2006 to mid 2026
 * Static hydrological risk indicators (baseline water stress and drought risk)
 
 Data Sources
@@ -27,11 +27,11 @@ Data Sources
    Licensed under CC BY 4.0
    https://www.wri.org/aqueduct
 
-The above data collection was performed using several libraraies in Python, which are included under src. These include geopy, geopandas, sklearn, hdbscan, seaborn, matplotlib, requests and pandas.
+The above data collection was performed using several libraries in Python, which are included under src. These include geopy, geopandas, sklearn, hdbscan, seaborn, matplotlib, requests and pandas.
 
 Methods and techniques: 
 
-The first step includes constructing spatial-temporal environmental datasets by merging the static hydrological risk indicators with the temperature time series using a coordinate-based spatial join. Accordingly, four variables are then defined. These are:
+The first step includes constructing spatiotemporal environmental datasets by merging the static hydrological risk indicators with the temperature time series using a coordinate-based spatial join. Accordingly, four variables are defined. These are:
 
 * Year-over-year temperature change
 * Long-term cumulative temperature deviation
@@ -64,7 +64,7 @@ Findings and Conclusions:
 </table>
 
 
-All 4 variables exhibit statistically significant distributional differences between the two groups, with the strongest effect being observed in baseline water stress. In particular, data centers demonstrate higher median, higher upper quartile, and high maximum for cumulative warming. Furthermore, data centers tend to exhibit a tighter distribution with reduced variability in YoY changes, while cities show a broader spread and a higher frequency of extreme fluctuations. 
+All 4 variables exhibit statistically significant distributional differences between the two groups, with the strongest effect being observed in baseline water stress. In particular, data centers demonstrate a higher median, a higher upper quartile, and a high maximum for cumulative warming. Furthermore, data centers tend to exhibit a tighter distribution with reduced variability in YoY changes, while cities show a broader spread and a higher frequency of extreme fluctuations. 
 
 
 <table>
@@ -78,7 +78,7 @@ All 4 variables exhibit statistically significant distributional differences bet
   </tr>
 </table>
 
-In addition and as demonstrated in the above two figures, baseline water stress is higher for data center locations than cities, while drought risk shows strong overlap with cities exhibiting larger variability.
+In addition, as demonstrated in the above two figures, baseline water stress is higher for data center locations than cities, while drought risk shows strong overlap with cities exhibiting larger variability.
 
 2- Thermal and hydrological risks are largely uncorrelated.
 
@@ -90,7 +90,7 @@ Correlation analysis shows near-zero relationships between temperature variables
 
 ![result](figures/rf_feature_importance.png)
 
-ML models identify temperature-based variables as the primary driver for classification, accounting for roughly two thirds of total feature importance. Therefore, feature importance reflects model-specific predictive contribution.
+ML models identify temperature-based variables as the primary drivers for classification, accounting for roughly two thirds of total feature importance. Therefore, feature importance reflects model-specific predictive contribution.
 
 4- Distinct environmental risk groups are present based on HDBSCAN analysis
 
@@ -104,7 +104,7 @@ HDBSCAN identifies multiple environmental risk clusters. These are:
 
 5- Random forest classification provided limited ability to separate classes. 
 
-With Accuracy = 87% and City F1 = 0.08, it is clear that class imbalance was observed with the data centers class dominating, which affected the classification performance on the other group.
+With Accuracy = 87% and City F1 = 0.08, this indicates that class imbalance was observed with the data centers class dominating, which affected the classification performance on the other group.
 
 
 Author 
